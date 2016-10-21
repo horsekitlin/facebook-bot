@@ -1,0 +1,46 @@
+{
+  "name": "facebook-bot",
+  "version": "0.0.1",
+  "description": "Facebook fans bot",
+  "main": "app.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha --compilers js:babel/register"
+  },
+  "repository": "",
+  "keywords": [
+    "bot",
+    "node",
+    "facebook"
+  ],
+  "author": "TomasLin <horsekit1982@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^5.8.34",
+    "should": "^8.0.1",
+    "supertest": "^1.1.0"
+  },
+  "dependencies": {
+    "babel": "^5.8.34",
+    "bluebird": "^3.1.1",
+    "body-parser": "^1.14.1",
+    "co": "^4.6.0",
+    "connect-multiparty": "^2.0.0",
+    "cors": "^2.7.1",
+    "ejs": "^2.3.4",
+    "es6-promise": "^3.0.2",
+    "express": "^4.13.3",
+    "express-ejs-layouts": "^2.0.0",
+    "fb": "^0.7.3",
+    "gulp-develop-server": "^0.5.0",
+    "install": "^0.4.1",
+    "isomorphic-fetch": "^2.2.0",
+    "lodash": "^3.10.1",
+    "mocha": "^2.3.4",
+    "moment": "^2.10.6",
+    "mongoose": "^4.3.2",
+    "morgan": "^1.6.1",
+    "node-schedule": "^0.6.0",
+    "npm": "^3.5.2"
+  }
+}

@@ -1,0 +1,18 @@
+<body>
+    <h1>共有<%= posts.total %></h1>
+    <ul class="media-list list-group">
+        <% posts.content.map(function(post){ %>
+        <li class="media list-group-item">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" style='width:120px;height:130px;' src=<%= post.picture %> alt="缺少圖片">
+                </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">共有<%= post.comments.length %>筆回覆</h4>
+                <p><%= post.message %></p>
+            </div>
+        </li>
+        <% }) %>
+    </ul>
+</body>

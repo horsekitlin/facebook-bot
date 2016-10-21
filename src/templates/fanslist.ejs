@@ -1,0 +1,27 @@
+<body>
+    <h2>共有<%= data.total %> 個粉絲團</h2>
+    <ul class="list-group">
+        <% data.content.map(function(item){ %>
+            <li class="list-group-item">
+                <a class="btn btn-sm btn-primary" href=<%= config.client + "/posts/list/" + item.fans_id %>>
+                    <%= item.name %>
+                </a>
+                <!--                <button id=<%= item.fans_id %> class="btn btn-sm btn-info initialposts">更新貼文</button> -->
+            </li>
+        <% }) %>
+    </ul>
+</body>
+<script>
+    $('.initialposts').bind('click', function(e){
+        $.ajax({
+            url : '/fbbot/initial/posts/' + e.target.id,
+            method : 'POST',
+            success : function(data){
+                alert('初始化成功');
+            },
+            error : function(){
+                alert('初始化失敗');
+            }
+        })
+    });
+</script>
